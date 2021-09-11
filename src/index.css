@@ -48,3 +48,12 @@ a:hover,
 a:active {
   color: #f300b4;
 }
+
+.flex {
+  position: relative;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}

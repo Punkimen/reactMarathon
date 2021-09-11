@@ -1,5 +1,5 @@
 import style from './style.module.css';
-const Layout = ({ title, descr, urlBg, colorBg }) => {
+const Layout = ({ title, descr, urlBg, colorBg, children }) => {
     const styleRoot = urlBg ? { backgroundImage: "url(" + urlBg + ")" } : { background: colorBg };
     return (
         <section className={style.root} style={styleRoot}>
@@ -11,6 +11,7 @@ const Layout = ({ title, descr, urlBg, colorBg }) => {
                     </div>
                     <div className={`${style.desc} ${style.full}`}>
                         <p>{descr}</p>
+                        <p>{children}</p>
                     </div>
                 </article>
             </div>
